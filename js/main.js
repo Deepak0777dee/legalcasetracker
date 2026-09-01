@@ -128,13 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
           <div class="footer-col">
-            <h4>Platform</h4>
+            <h4>Quick Links</h4>
             <ul>
-              <li><a href="platform.html">Features</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="platform.html">Platform</a></li>
               <li><a href="solutions.html">Solutions</a></li>
+              <li><a href="dashboard.html">Analytics</a></li>
               <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="404.html">Integrations</a></li>
-              <li><a href="404.html">API Docs</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">

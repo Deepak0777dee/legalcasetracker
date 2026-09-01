@@ -1149,8 +1149,7 @@ p { color: var(--text-secondary); line-height: 1.8; }
   line-height: 1.7;
 }
 .footer-brand .logo img {
-  height: 28px;
-  filter: brightness(0) invert(1);
+  height: 32px;
 }
 .footer-social {
   display: flex;
@@ -1665,7 +1664,7 @@ textarea.form-control {
 .hero-mockup-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .hero-mockup-img {
