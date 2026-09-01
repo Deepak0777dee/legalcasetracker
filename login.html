@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — Stackly Legal Case Analytics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <script src="js/auth.js"></script>
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-left">
+    <div class="auth-card">
+      <a href="index.html" class="auth-back-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Home</a>
+      <img src="images/logo-stackly.webp" alt="Stackly" class="auth-logo" />
+      <h2>Welcome Back</h2>
+      <p class="auth-subtitle">Sign in to access your case analytics dashboard.</p>
+
+      <div class="social-auth">
+        <button class="social-auth-btn" onclick="window.location.href='404.html'"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</button>
+        <button class="social-auth-btn" onclick="window.location.href='404.html'"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Microsoft</button>
+      </div>
+
+      <div class="auth-divider">or sign in with email</div>
+
+      <form id="loginForm">
+        <div class="form-group"><label>Email Address <span class="required">*</span></label><input type="email" class="form-control" id="loginEmail" placeholder="you@company.com" required onblur="validateField(this)" /><div class="form-error"></div></div>
+        <div class="form-group"><label>Password <span class="required">*</span></label><div class="password-wrapper"><input type="password" class="form-control" id="loginPassword" placeholder="••••••••" required minlength="6" onblur="validateField(this)" /><button type="button" class="password-toggle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="form-error"></div></div>
+
+        <div style="margin-bottom:1.25rem;">
+          <label style="font-size:0.88rem;font-weight:600;color:var(--text);margin-bottom:0.5rem;display:block;">Sign in as <span class="required">*</span></label>
+          <div class="role-selector">
+            <label class="role-option"><input type="radio" name="loginRole" value="admin" /><div class="role-option-label"><div class="role-option-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="role-name">Admin</span><span class="role-desc">Full access</span></div></label>
+            <label class="role-option"><input type="radio" name="loginRole" value="attorney" checked /><div class="role-option-label"><div class="role-option-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><span class="role-name">Attorney</span><span class="role-desc">Case access</span></div></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="loginBtn">Sign In</button>
+      </form>
+      <p class="auth-link" style="margin-top:1.5rem;">Don't have an account? <a href="signup.html">Create one</a></p>
+    </div>
+  </div>
+  <div class="auth-right">
+    <div class="auth-right-content">
+      <h2>Smarter Legal<br/>Decisions Start Here</h2>
+      <p>Access real-time case analytics, AI-powered predictions, and intelligent document analysis — all from one powerful platform.</p>
+      <div class="auth-right-stats">
+        <div class="auth-right-stat"><div class="val">500+</div><div class="lbl">Law Firms</div></div>
+        <div class="auth-right-stat"><div class="val">89%</div><div class="lbl">Accuracy</div></div>
+        <div class="auth-right-stat"><div class="val">3.2x</div><div class="lbl">Faster</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  const role = document.querySelector('input[name="loginRole"]:checked').value;
+  if (!email || !password) return;
+  const result = authLogin(email, password, role);
+  if (result.success) window.location.href = 'dashboard.html';
+});
+</script>
+</body>
+</html>

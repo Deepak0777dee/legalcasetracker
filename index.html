@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly — Legal Case Analytics Platform</title>
+  <meta name="description" content="Stackly transforms legal case management with AI-powered analytics, predictive outcomes, and real-time dashboards for law firms and legal departments." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- Loader -->
+<div id="page-loader">
+  <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+    <div class="loader-logo"><img src="images/logo-stackly.webp" alt="Stackly" /></div>
+    <div class="loader-ring"></div>
+  </div>
+  <div class="loader-text">Loading</div>
+</div>
+
+<!-- Header -->
+<header class="header" id="mainHeader">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo-stackly.webp" alt="Stackly" /></a>
+    <nav class="nav-links pill-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="platform.html">Platform</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="dashboard.html">Analytics</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+    <div class="header-right">
+      <a href="contact.html" class="btn btn-white header-demo-btn">Get a Demo</a>
+      <button class="ham-btn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <button class="mobile-close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <img src="images/logo-stackly.webp" alt="Stackly" class="mobile-logo" />
+  <a href="index.html">Home</a>
+  <a href="platform.html">Platform</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Sign In</a>
+  <a href="signup.html" style="color:var(--accent);font-weight:600;">Get Started →</a>
+</div>
+<div id="mobile-overlay"></div>
+
+<!-- Hero -->
+<section class="hero hero-centered">
+  <div class="hero-bg"></div>
+  <div class="container hero-container-centered">
+    <div class="hero-badge hero-badge-outline">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      TRUSTED BY MODERN LEGAL TEAMS
+    </div>
+    <h1 class="hero-title-centered">Control Every Case Operations<br/>From One Dashboard</h1>
+    <p class="hero-text-centered">From predictive outcomes to document analysis, Stackly helps legal teams reduce risk, improve win rates, and keep cases moving with real-time analytics.</p>
+    <div class="hero-btns hero-btns-centered">
+      <a href="signup.html" class="btn btn-white btn-lg" style="color: #3b82f6;">Start Free Trial</a>
+      <a href="platform.html" class="btn btn-outline-white btn-lg">Explore Dashboard</a>
+    </div>
+    
+    <div class="hero-mockup-wrapper">
+      <img src="images/dashboard_mockup.webp" alt="Dashboard" class="hero-mockup-img" />
+      <img src="images/clouds_bottom.webp" alt="" class="hero-clouds" />
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid stagger-children">
+      <div class="stat-item">
+        <div class="stat-number" data-count="500" data-suffix="+">0</div>
+        <div class="stat-label">Law Firms Trust Us</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="50000" data-suffix="+">0</div>
+        <div class="stat-label">Cases Analyzed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="84" data-suffix="%">0</div>
+        <div class="stat-label">Avg. Win Rate Increase</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-count="99" data-suffix=".9%">0</div>
+        <div class="stat-label">Platform Uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="section">
+  <div class="container text-center">
+    <span class="section-label">Platform Features</span>
+    <h2 class="section-title">Everything You Need to Win More Cases</h2>
+    <p class="section-subtitle">Our comprehensive suite of legal analytics tools helps you make data-driven decisions, reduce risk, and deliver better outcomes for your clients.</p>
+    <div class="features-grid stagger-children">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:var(--accent-bg);color:var(--accent);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h4>Predictive Analytics</h4>
+        <p>Our AI models analyze historical case data, judge tendencies, and jurisdiction patterns to predict case outcomes with up to 89% accuracy, helping you craft winning strategies from day one.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:var(--info-bg);color:var(--info);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h4>Smart Document Analysis</h4>
+        <p>Automatically extract key clauses, identify risk factors, and cross-reference case precedents across thousands of documents in seconds — not hours. Save 70% of document review time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:rgba(139,92,246,0.08);color:#8b5cf6;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h4>Real-Time Dashboard</h4>
+        <p>Monitor all your cases, deadlines, team workloads, and financial metrics from a single, intuitive dashboard with live updates and customizable widgets that keep everyone aligned.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:var(--warning-bg);color:var(--warning);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h4>Deadline Intelligence</h4>
+        <p>Never miss a filing deadline or statute of limitations again. Our intelligent calendar system auto-tracks all critical dates, sends proactive alerts, and integrates with your existing workflow tools.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:var(--danger-bg);color:var(--danger);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Risk Scoring Engine</h4>
+        <p>Quantify litigation risk with our proprietary scoring algorithm that factors in case type, jurisdiction, opposing counsel history, and precedent strength to give you a clear risk profile for every case.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:var(--success-bg);color:var(--success);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h4>Financial Analytics</h4>
+        <p>Track billable hours, revenue by practice area, client profitability, and expense forecasting. Generate compliance-ready reports and optimize your firm's financial performance with data-driven insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Case Lifecycle Timeline -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="split-grid">
+      <div class="split-content">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">From Case Intake to Resolution</h2>
+        <p>Stackly streamlines every phase of case management with intelligent automation and data-driven insights at every step.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Case Intake & Assessment</h4>
+            <div class="date">Automated risk scoring within 30 seconds</div>
+            <p>Upload case documents and our AI instantly analyzes jurisdiction, case type, and opposing counsel history to generate a comprehensive risk assessment and recommended strategy.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Discovery & Research</h4>
+            <div class="date">70% faster document review</div>
+            <p>Our NLP engine scans thousands of precedents, highlights relevant case law, and identifies key evidence patterns. Cross-reference across your entire case history automatically.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Strategy & Litigation</h4>
+            <div class="date">Real-time analytics during trial</div>
+            <p>Access live dashboards showing case progression, deadline tracking, and outcome probability updates. Collaborate with your team using shared workspaces and annotation tools.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Resolution & Reporting</h4>
+            <div class="date">Automated compliance reports</div>
+            <p>Generate detailed case outcome reports, financial summaries, and performance analytics. Feed results back into the system to continuously improve prediction accuracy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-image">
+        <div style="background:linear-gradient(135deg, var(--bg-subtle) 0%, rgba(44,181,160,0.05) 100%);border-radius:var(--radius-xl);padding:3rem;border:1px solid var(--border);">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
+              <div style="font-size:2rem;font-weight:800;color:var(--accent);font-family:var(--font-heading);">89%</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Prediction Accuracy</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
+              <div style="font-size:2rem;font-weight:800;color:var(--primary);font-family:var(--font-heading);">3.2x</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Faster Research</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
+              <div style="font-size:2rem;font-weight:800;color:var(--info);font-family:var(--font-heading);">42%</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Cost Reduction</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;text-align:center;">
+              <div style="font-size:2rem;font-weight:800;color:var(--success);font-family:var(--font-heading);">0</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.25rem;">Missed Deadlines</div>
+            </div>
+          </div>
+          <div style="margin-top:1.5rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+              <span style="font-size:0.82rem;font-weight:600;color:var(--text);">Case Pipeline</span>
+              <span style="font-size:0.72rem;color:var(--text-faint);">This Quarter</span>
+            </div>
+            <div style="display:flex;gap:3px;height:8px;border-radius:4px;overflow:hidden;">
+              <div style="flex:4;background:var(--accent);border-radius:4px 0 0 4px;"></div>
+              <div style="flex:3;background:var(--info);"></div>
+              <div style="flex:2;background:var(--warning);"></div>
+              <div style="flex:1;background:var(--danger);border-radius:0 4px 4px 0;"></div>
+            </div>
+            <div style="display:flex;gap:1rem;margin-top:0.75rem;flex-wrap:wrap;">
+              <span style="font-size:0.7rem;color:var(--text-faint);display:flex;align-items:center;gap:0.25rem;"><span style="width:8px;height:8px;background:var(--accent);border-radius:2px;"></span> Active 42%</span>
+              <span style="font-size:0.7rem;color:var(--text-faint);display:flex;align-items:center;gap:0.25rem;"><span style="width:8px;height:8px;background:var(--info);border-radius:2px;"></span> Discovery 28%</span>
+              <span style="font-size:0.7rem;color:var(--text-faint);display:flex;align-items:center;gap:0.25rem;"><span style="width:8px;height:8px;background:var(--warning);border-radius:2px;"></span> Review 18%</span>
+              <span style="font-size:0.7rem;color:var(--text-faint);display:flex;align-items:center;gap:0.25rem;"><span style="width:8px;height:8px;background:var(--danger);border-radius:2px;"></span> Urgent 12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bento Features -->
+<section class="section">
+  <div class="container text-center">
+    <span class="section-label">Why Stackly</span>
+    <h2 class="section-title">Built for Modern Legal Teams</h2>
+    <p class="section-subtitle">From solo practitioners to AmLaw 100 firms, Stackly adapts to your workflow and scales with your practice.</p>
+    <div class="bento-grid">
+      <div class="bento-item span-2">
+        <div class="bento-icon" style="background:var(--accent-bg);color:var(--accent);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <h4>Enterprise-Grade Security</h4>
+        <p>SOC 2 Type II certified with end-to-end encryption, RBAC access controls, and complete audit trails. Your client data is protected with the same standards used by Fortune 500 companies. We maintain full compliance with ABA ethical guidelines and state bar regulations for data handling.</p>
+      </div>
+      <div class="bento-item">
+        <div class="bento-icon" style="background:var(--info-bg);color:var(--info);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-8.66-9H9m6 0h5.66M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24m0-14.14l-4.24 4.24m-5.66 5.66l-4.24 4.24"/></svg></div>
+        <h4>API Integrations</h4>
+        <p>Connect with Clio, MyCase, PracticePanther, Salesforce, and 50+ other tools your firm already uses.</p>
+      </div>
+      <div class="bento-item">
+        <div class="bento-icon" style="background:rgba(236,72,153,0.08);color:#ec4899;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h4>Team Collaboration</h4>
+        <p>Shared workspaces, real-time annotations, task assignments, and role-based dashboards keep everyone aligned.</p>
+      </div>
+      <div class="bento-item">
+        <div class="bento-icon" style="background:var(--warning-bg);color:var(--warning);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h4>Custom Reports</h4>
+        <p>Build custom report templates with drag-and-drop, schedule automated delivery, and export to PDF, Excel, or integrate via API.</p>
+      </div>
+      <div class="bento-item">
+        <div class="bento-icon" style="background:rgba(139,92,246,0.08);color:#8b5cf6;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+        <h4>Legal Research Assistant</h4>
+        <p>AI-powered research that finds relevant precedents, statutes, and case law across all major legal databases. Get comprehensive memos generated in minutes, not days. Our assistant cross-references your case facts with historical rulings and provides citation-ready summaries with confidence scores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <span class="section-label">Client Stories</span>
+    <h2 class="section-title">Trusted by Leading Legal Professionals</h2>
+    <p class="section-subtitle">See how law firms and legal departments are transforming their practice with Stackly's analytics platform.</p>
+    <div class="testimonials-grid stagger-children">
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">"Stackly has completely transformed how we approach case strategy. The predictive analytics have been remarkably accurate, and our win rate has improved by 23% since implementation. It's like having a senior partner's 30 years of experience distilled into data."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JH</div>
+          <div><div class="testimonial-name">Jennifer Hayes</div><div class="testimonial-role">Managing Partner, Hayes & Associates</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">"The document analysis feature alone saved us 200+ hours last quarter. We can now process discovery documents in a fraction of the time, and the risk scoring engine gives our team confidence in every negotiation. The ROI was evident within the first month."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+          <div><div class="testimonial-name">Michael Rodriguez</div><div class="testimonial-role">General Counsel, TechForward Inc.</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">"As a boutique family law firm, we needed a solution that was powerful yet easy to use. Stackly delivered on both fronts. The deadline intelligence has been a game-changer — zero missed filings since we started using the platform. Our paralegals love it."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AK</div>
+          <div><div class="testimonial-name">Amanda Kim</div><div class="testimonial-role">Senior Partner, Kim Family Law</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Legal Practice?</h2>
+      <p>Join 500+ law firms already using Stackly to win more cases, reduce costs, and deliver better client outcomes. Start your 30-day free trial today — no credit card required.</p>
+      <div class="cta-btns">
+        <a href="signup.html" class="btn btn-white btn-lg">Start Free Trial <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="contact.html" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.3);">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo-stackly.webp" alt="Stackly" /></a>
+        <p>Stackly empowers legal professionals with AI-driven analytics, predictive insights, and intelligent case management tools. Transform your practice with data.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="platform.html">Features</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="404.html">Integrations</a></li>
+          <li><a href="404.html">API Docs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="404.html">About Us</a></li>
+          <li><a href="404.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="404.html">Blog</a></li>
+          <li><a href="404.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="404.html">Privacy Policy</a></li>
+          <li><a href="404.html">Terms of Service</a></li>
+          <li><a href="404.html">Security</a></li>
+          <li><a href="404.html">Compliance</a></li>
+          <li><a href="404.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Stackly. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="404.html">Privacy</a>
+        <a href="404.html">Terms</a>
+        <a href="404.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

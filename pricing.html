@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Stackly Legal Case Analytics</title>
+  <meta name="description" content="Transparent pricing for Stackly's legal analytics platform. Choose from Starter, Professional, and Enterprise plans." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<div id="page-loader"><div style="position:relative;display:flex;align-items:center;justify-content:center;"><div class="loader-logo"><img src="images/logo-stackly.webp" alt="Stackly" /></div><div class="loader-ring"></div></div><div class="loader-text">Loading</div></div>
+<header class="header" id="mainHeader"><div class="container"><a href="index.html" class="logo"><img src="images/logo-stackly.webp" alt="Stackly" /></a><nav class="nav-links"><a href="index.html">Home</a><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html" class="active">Pricing</a><a href="contact.html">Contact</a></nav><div class="header-right"><a href="login.html" class="header-login">Sign In</a><a href="signup.html" class="header-cta">Get Started <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><button class="ham-btn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></div></header>
+<div id="mobile-menu"><button class="mobile-close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><img src="images/logo-stackly.webp" alt="Stackly" class="mobile-logo" /><a href="index.html">Home</a><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="login.html">Sign In</a><a href="signup.html" style="color:var(--accent);font-weight:600;">Get Started →</a></div><div id="mobile-overlay"></div>
+
+<section class="page-hero"><div class="container"><span class="section-label">Pricing</span><h1>Simple, Transparent Pricing</h1><p>Start free and scale as you grow. Every plan includes a 30-day free trial — no credit card required.</p></div></section>
+
+<section class="section">
+  <div class="container">
+    <div class="pricing-grid stagger-children">
+      <div class="pricing-card">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-price">$49<span>/mo</span></div>
+        <div class="pricing-desc">Perfect for solo practitioners and small firms just getting started with legal analytics.</div>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Up to 50 active cases</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Basic predictive analytics</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Document analysis (500/mo)</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Deadline tracking</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> 2 user seats</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Email support</li>
+        </ul>
+        <a href="signup.html" class="btn btn-outline" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-name">Professional</div>
+        <div class="pricing-price">$149<span>/mo</span></div>
+        <div class="pricing-desc">For growing firms that need advanced analytics, team collaboration, and unlimited case management.</div>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Unlimited active cases</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Advanced AI predictions</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Unlimited document analysis</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Risk scoring engine</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> 10 user seats</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Priority support + onboarding</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> API access + integrations</li>
+        </ul>
+        <a href="signup.html" class="btn btn-accent" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name">Enterprise</div>
+        <div class="pricing-price">Custom</div>
+        <div class="pricing-desc">For AmLaw 100 firms and legal departments that need custom deployment, dedicated support, and white-glove service.</div>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Everything in Professional</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Custom ML model training</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> On-premise deployment option</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Unlimited users</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Dedicated account manager</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> 99.99% SLA guarantee</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Custom compliance reports</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <span class="section-label">FAQ</span>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know about Stackly's pricing, features, and getting started.</p>
+    <div class="faq-list">
+      <div class="faq-item active"><button class="faq-question">What's included in the 30-day free trial?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Every plan comes with a full-featured 30-day free trial. You get access to all features included in your selected plan tier, no credit card required. At the end of your trial, you can choose to subscribe or your account will be downgraded to a read-only mode.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Can I upgrade or downgrade my plan at any time?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Yes, you can change your plan at any time. Upgrades take effect immediately with pro-rated billing. Downgrades take effect at the start of your next billing cycle. No penalties or hidden fees.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Is my data secure with Stackly?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Absolutely. Stackly is SOC 2 Type II certified, uses AES-256 encryption at rest and TLS 1.3 in transit, maintains RBAC access controls, and provides complete audit trails. We comply with all ABA ethical guidelines for data handling and never use your client data for model training.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Do you offer discounts for non-profits or legal aid organizations?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Yes! We offer a 50% discount for verified non-profit organizations and legal aid societies. Contact our sales team with proof of your non-profit status to receive your discount code.</p></div></div>
+      <div class="faq-item"><button class="faq-question">How does the AI prediction model work?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Our prediction engine is trained on millions of historical case outcomes, analyzing over 50 variables including case type, jurisdiction, judge history, opposing counsel track record, and case facts. The model is continuously updated with new outcomes to improve accuracy over time.</p></div></div>
+      <div class="faq-item"><button class="faq-question">What integrations do you support?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-answer"><p>Stackly integrates with all major legal practice management tools including Clio, MyCase, PracticePanther, and more. We also integrate with Salesforce, Slack, Microsoft 365, Google Workspace, and offer a REST API for custom integrations.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section section"><div class="container"><div class="cta-content"><h2>Start Your Free Trial Today</h2><p>Join 500+ firms already using Stackly. No credit card required. Cancel anytime.</p><div class="cta-btns"><a href="signup.html" class="btn btn-white btn-lg">Get Started Free</a></div></div></div></section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><img src="images/logo-stackly.webp" alt="Stackly" /></a><p>AI-powered legal analytics for modern law firms.</p></div><div class="footer-col"><h4>Platform</h4><ul><li><a href="platform.html">Features</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="404.html">About</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="404.html">Privacy</a></li><li><a href="404.html">Terms</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Stackly. All rights reserved.</p></div></div></footer>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
