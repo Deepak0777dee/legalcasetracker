@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <li><a href="index.html">Home</a></li>
               <li><a href="platform.html">Platform</a></li>
               <li><a href="solutions.html">Solutions</a></li>
-              <li><a href="dashboard.html">Analytics</a></li>
+              <li></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.body.addEventListener('change', (e) => {
-    if (e.target.tagName === 'SELECT' || e.target.classList.contains('filter-select')) {
+    if ((e.target.tagName === 'SELECT' || e.target.classList.contains('filter-select')) && !e.target.closest('#contactForm')) {
       window.location.href = '404.html';
     }
   });
